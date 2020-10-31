@@ -6,30 +6,34 @@ const initalState = {
     products: {
         Kickflip: {
             name: "Kickflip",
-            price: 25.00,
+            tagname: "kickflip",
+            price: 25,
             numbers: 0,
             inCart: false
         },
         Putting: {
             name: "Putting",
-            price: 50.00,
+            tagName: "putting",
+            price: 50,
             numbers: 0,
             inCart: false
         },
         React: {
-            name: "React.js",
-            price: 35.00,
+            name: "React.Js",
+            tagName: "react.js",
+            price: 35,
             numbers: 0,
             inCart: false
         },
-        VersaBlock: {
+        Versablock: {
             name: "Versa Block",
-            price: 65.00,
+            tagName: "versablock",
+            price: 65,
             numbers: 0,
             inCart: false
         }
     }
-};
+}
 
 export default (state = initalState, action) => {
     switch(action.type) {
@@ -48,7 +52,7 @@ export default (state = initalState, action) => {
                     ...state.products,
                     [action.payload]: addQuantity
                 }
-            };
+            }
             case GET_NUMBERS_BASKET:
                 return {
                     ...state
