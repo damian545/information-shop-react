@@ -51,13 +51,19 @@ nav li {
 nav h2 {
   font-size: 35px;
   color: yellow;
+  text-shadow: 3px 3px 3px black;
 }
 
 li a {
   font-size: 25px;
   padding: 5px;
   color: yellow;
+  text-shadow: 3px 3px 3px black;
   text-decoration: none;
+}
+
+h3 {
+  color: rgb(73, 226, 175);
 }
 
 .cart ion-icon {
@@ -67,7 +73,7 @@ li a {
 }
 
 .cart a {
-  background-color: dodgerblue;
+  background-color: rgb(70, 70, 226);
   color: #fff;
   cursor: pointer;
   text-decoration: none;
